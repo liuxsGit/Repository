@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>HouseRent</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>userCheckServlet</servlet-name>
+  	<servlet-class>servlet.userCheckServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>userCheckServlet</servlet-name>
+  	<url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>usercheckpasswordServlet</servlet-name>
+  	<servlet-class>servlet.usercheckpasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>usercheckpasswordServlet</servlet-name>
+  	<url-pattern>/checkpassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>userAddServlet</servlet-name>
+  	<servlet-class>servlet.userAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userAddServlet</servlet-name>
+ 	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>userscansearchServlet</servlet-name>
+  	<servlet-class>servlet.userscansearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>userscansearchServlet</servlet-name>
+ 	<url-pattern>/scansearch</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>usermessageQueryServlet</servlet-name>
+  	<servlet-class>servlet.usermessageQueryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>usermessageQueryServlet</servlet-name>
+ 	<url-pattern>/messquery</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>usermessageServlet</servlet-name>
+  	<servlet-class>servlet.usermessageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>usermessageServlet</servlet-name>
+ 	<url-pattern>/message</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminqueryServlet</servlet-name>
+  	<servlet-class>servlet.adminqueryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminqueryServlet</servlet-name>
+ 	<url-pattern>/admin-query</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminUseraddServlet</servlet-name>
+  	<servlet-class>servlet.adminUseraddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminUseraddServlet</servlet-name>
+ 	<url-pattern>/admin-adduser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>admindelServlet</servlet-name>
+  	<servlet-class>servlet.admindelServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>admindelServlet</servlet-name>
+ 	<url-pattern>/admin-del</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminupdateServlet</servlet-name>
+  	<servlet-class>servlet.adminupdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminupdateServlet</servlet-name>
+ 	<url-pattern>/admin-update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminHouseaddServlet</servlet-name>
+  	<servlet-class>servlet.adminHouseaddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminHouseaddServlet</servlet-name>
+ 	<url-pattern>/admin-houseadd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>usersearchbykeyServlet</servlet-name>
+  	<servlet-class>servlet.usersearchbykeyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>usersearchbykeyServlet</servlet-name>
+ 	<url-pattern>/user-search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminskipServlet</servlet-name>
+  	<servlet-class>servlet.adminskipServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminskipServlet</servlet-name>
+ 	<url-pattern>/admin-skip</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
